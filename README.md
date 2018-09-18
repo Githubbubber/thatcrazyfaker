@@ -2,11 +2,13 @@
 That Crazy Faker is a Ruby on Rails app that generates funny Faker data. Users can enjoy reading them, and can generate new posts too.
 
 ##Directions for running That Crazy Faker locally:
-Note: For devs already familiar with RoR
-bundle install --without production
-rails db:migrate
-rails test
-rails s(erver)
+Note: For BEGINNER devs, albeit familiar enough with RoR
+1) bundle install --without production
+	1) [TO UNDO] bundle uninstall gemname
+2) rails db:migrate
+	2) [TO UNDO] rails db:rollback
+3) rails test
+4) rails s(erver)
 
 It's one of my first Rails apps from my General Assembly course back in 2016, and explores what the Faker Rails gem offers developers in randomly generated data.
 

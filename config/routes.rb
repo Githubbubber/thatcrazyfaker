@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  root 'posts#index'
-
-  resources :posts
+  root to: "welcome#index"
+  get "othergems", to: "welcome#othergems"
+  resources :welcome, only: [:index, :othergems]
+  resources :posts, only: [:index, :show, :create]
 end
 
 # From a rake routes:
@@ -30,3 +29,6 @@ end
 #        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
 # update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
 #      rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
