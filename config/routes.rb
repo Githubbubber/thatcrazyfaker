@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   root to: "welcome#index"
+  
+  get "help", to: "welcome#help"
   get "othergems", to: "welcome#othergems"
-  resources :welcome, only: [:index, :othergems]
+  resources :welcome, only: [:index, :help, :othergems]
+
   resources :posts
 end
 
