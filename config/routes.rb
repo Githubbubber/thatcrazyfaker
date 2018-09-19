@@ -12,7 +12,8 @@ end
 #  					 Prefix Verb   URI Pattern                                                                              Controller#Action
 # 					   root GET    /                                                                                        welcome#index
 #                 othergems GET    /othergems(.:format)                                                                     welcome#othergems
-#             welcome_index GET    /welcome(.:format)                                                                       welcome#index
+#             welcome_index GET    /welcome(.:format)                                                                       welcome#othergems
+#             		   help GET    /help(.:format)                                                                      welcome#index
 
 #                     posts GET    /posts(.:format)                                                                         posts#index
 #                           POST   /posts(.:format)                                                                         posts#create
