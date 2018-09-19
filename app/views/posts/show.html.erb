@@ -7,7 +7,7 @@
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--2-col"></div>
   <div class="mdl-cell mdl-cell--8-col">
-    <h3><%= @post.title %></h3>
+    <h3>&quot;<%= @post.title %>&quot;</h3>
     <p>Written by: <%= @post.author %></p>
     <p><%= @post.content %></p>
   </div>
@@ -16,6 +16,7 @@
       <%= link_to "Back to all posts", posts_url %>
     </p>
   </div>
+--- <%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Back', posts_path %> ---
 </div>
 
 

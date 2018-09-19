@@ -7,8 +7,7 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get othergems" do
-    get welcome_othergems_url
+    get othergems_url
     assert_response :success
   end
-
 end

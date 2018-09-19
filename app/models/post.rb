@@ -2,7 +2,7 @@ class Post < ApplicationRecord
 	
   validates :title,
       presence: true,
-      length: { minimum: 8 },
+      length: { minimum: 7, maximum:10 },
       format: { with: /[A-Za-z0-9._]/ }
 
   validates :author,
