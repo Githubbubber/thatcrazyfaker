@@ -10,7 +10,7 @@ Note: For BEGINNER devs, albeit familiar enough with RoR
 3) rails test
 4) rails s(erver)
 
-It's one of my first Rails apps from my General Assembly course back in 2016, and explores what the Faker Rails gem offers developers in randomly generated data.
+It's one of my first Rails apps from my General Assembly course back in 2016, and explores what the Faker Rails gem offers developers in randomly generated data. I've been refactoring and refactoring and I'm comfortable with its current state. It may look like a simple app but the hell I went through with the gems, rvm/curl/bash/you name it while developing on Windows... Well, let me not bog you down with the details.
 
 I'd love for folks new to Ruby on Rails to clone this repo to their heart's content and see how great Faker is. There are other gems that generates random data but I like this one because it's pretty straightforward. One of my former instructors was a contributor to the gem too, which is cool.
 
