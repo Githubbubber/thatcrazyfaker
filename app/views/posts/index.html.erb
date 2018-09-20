@@ -20,20 +20,4 @@
 <% end %>
 </div>
 
---- <%= link_to 'Want to make one?', new_post_path %> ---<br/><br/>
-<a name="newPost"></a>
-<!-- link to new post here -->
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col"></div>
-  <div class="mdl-cell mdl-cell--5-col">
-    <h2>'Faker'ize a post</h2>
-    <span>What's your flavor?</span>
-    <br/>
-    <%= form_tag("/posts", method: "create") do %>
-      <%= submit_tag "Hipster" %>
-      <%= submit_tag "Hacker" %>
-      <%= submit_tag "Star Wars" %>
-    <% end %>
-  </div>
-  <div class="mdl-cell mdl-cell--3-col"></div>
-</div>
+--- <%= link_to 'Want to make one?', new_post_path %> ---

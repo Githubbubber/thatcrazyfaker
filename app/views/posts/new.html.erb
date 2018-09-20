@@ -1,2 +1,12 @@
 <% provide(:title, "Make a New Entry") %>
-<h1>Faker'ize a Post</h1>
+<h1>'Faker'ize a post</h1>
+
+<div>What's your flavor?</div>
+<br/><br/>
+
+<%= form_tag("/posts", method: "create") do %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= submit_tag "Hipster" %>
+  <%= submit_tag "Hacker" %>
+  <%= submit_tag "Star Wars" %>
+<% end %>

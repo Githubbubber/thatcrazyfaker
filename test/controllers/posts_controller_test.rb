@@ -19,9 +19,11 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Make a New Entry | #{@base_title}"
   end
 
+# NEED TO REVISIT
   # test "should create post" do
   #   assert_difference('Post.count') do
-  #     post posts_path, params: { post: { author: @post.author, content: @post.content, title: @post.title } }
+  #     # puts @post.title + " " + posts_path
+  #     post posts_path, params: { commit: @post.title }
   #   end
 
   #   assert_select "title", "Post | #{@base_title}"
@@ -31,25 +33,5 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   test "should show post" do
     get post_path(@post)
     assert_response :success
-  end
-
-  test "should get edit" do
-    get edit_post_path(@post)
-    assert_response :success
-    assert_select "title", "Edit an Entry | #{@base_title}"
-  end
-
-  # test "should update post" do
-  #   patch post_path(@post), params: { post: { author: @post.author, content: @post.content, title: @post.title } }
-  #   assert_select "title", "Update an Entry | #{@base_title}"
-  #   assert_redirected_to post_path(@post)
-  # end
-
-  test "should destroy post" do
-    assert_difference('Post.count', -1) do
-      delete post_path(@post)
-    end
-
-    assert_redirected_to posts_path
   end
 end
