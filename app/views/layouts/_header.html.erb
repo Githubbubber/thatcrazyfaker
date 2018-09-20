@@ -1,0 +1,26 @@
+    <header class="mdl-layout__header mdl-layout--large-screen-only">
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">
+          <%= link_to "Crazy Faker!!",            root_path,     class: "mdl-navigation__link"  %>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",               root_path,     class: "mdl-navigation__link"  %></li>
+            <li><%= link_to "Faker'ized posts",   posts_path,    class: "mdl-navigation__link"  %></li>
+            <li><%= link_to "Help",               help_path,     class: "mdl-navigation__link"  %></li>
+            <li><%= link_to "Other gems",         othergems_path,class: "mdl-navigation__link"  %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+      <span class="mdl-layout-title"><a class="mdl-navigation__link" href="/">Crazy Faker!!</a></span>
+      <nav class="mdl-navigation">
+          <%= link_to "Home",                     root_path,     class: "mdl-navigation__link" %>
+          <%= link_to "Faker'ized posts",         posts_path,    class: "mdl-navigation__link" %>
+          <%= link_to "Help",                     help_path,     class: "mdl-navigation__link" %>
+          <%= link_to "Other gems",               othergems_path,class: "mdl-navigation__link" %>
+      </nav>
+    </div>

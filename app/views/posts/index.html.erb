@@ -15,13 +15,12 @@
     <strong><a href="posts/<%= post.id %>"><%= post.title %></a></strong> written by <%= post.author %>
   </div>
   <div class="mdl-cell mdl-cell--6-col"><%= post.content %></div>
-  <span><%= link_to 'Show', post %></span> | <span><%= link_to 'Edit', edit_post_path(post) %></span> | 
-  <span><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+  <span><%= link_to 'Show', post %></span> | <span>
   <br/><br/><br/>
 <% end %>
 </div>
 
---- <%= link_to 'New Post', new_post_path %> ---<br/><br/>
+--- <%= link_to 'Want to make one?', new_post_path %> ---<br/><br/>
 <a name="newPost"></a>
 <!-- link to new post here -->
 <div class="mdl-grid">
