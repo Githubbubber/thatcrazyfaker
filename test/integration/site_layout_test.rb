@@ -14,7 +14,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get posts_path
     assert_template 'posts/index'
     assert_select "a[href=?]", new_post_path
-    assert_select "a[href=?]", post_path
 
     assert_select "a[href=?]", root_path, count: 4
     assert_select "a[href=?]", help_path, count: 3
